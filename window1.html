@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+
+<script type="text/javascript">
+
+
+function display()
+{
+
+displaywin =window.open("","new","toolbar=no","weight=300,height=20");
+msg="<UL><B>name:</B></UL>"+document.form1.name.value+"<BR>";
+msg="<UL><B>add:</B></UL>"+document.form1.add.value+"<BR>";
+
+displaywin.document.write(msg);
+}
+</script>
+<body>
+<form name ="form1">
+<b>name:</b><input type="text" length ="40" name="name"><br>
+<b>add:</b><input type="text" length="50" name="add"><br>
+<input type="button" value="display new window" onclick="display()"><br>
+<input type="button" value="close new window" onclick="displaywin.close()">
+
+<input type="button" value="close new window" onclick="window.close()">
+</form>
+</body>
+
+</html>
+
+
